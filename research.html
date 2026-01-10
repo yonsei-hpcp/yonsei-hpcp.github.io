@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Research | HPCP Lab @ Yonsei Univ.</title>
+    <link rel="stylesheet" type="text/css" href="style.css?v=999">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div id="top">
+      <center><img src="images/logo.jpg" width="650"></center>
+      <ul id="menu">
+        <li><a href="index">Home</a></li>
+        <li><a href="research" class="active">Research</a></li>
+        <li><a href="members">Members</a></li>
+        <li><a href="publications">Publications</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h1>Research Topics</h1>
+      <ul>
+        <li><b>Processor Performance Analysis &amp; Modeling</b>
+          <p align="justify">
+            Cycle-level simulations are currently the most widely-used performance evaluation technique, but they are too slow and will become
+            much slower as processor microarchitectures become more complex.
+            Performance modeling, on the other hand, allows us to quickly predict an application's performance by raising the level
+            of abstraction in architectural simulation.
+            Furthermore, systems can greatly benefit from performance modeling by being able to predict applications' performance with
+            little overheads.
+            In this research, we propose faster but accurate performance evaluation methods which can serve as alternatives to the slow cycle-level simulations.
+            GCoM [ISCA '22], a fast and accurate analytical model for evaluating the performance of modern GPUs, and
+            GCStack&plus;GCScaler [ISCA '25], a fast and accurate GPU performance analysis framework using fine-grained stall cycle accounting and interval analysis,
+            are representative outcomes of this research topic.
+          </p>
+        </li>
+        <li><b>Hardware-Accelerated Database Management Systems</b>
+          <p align="justify">
+            Database management systems (DBMSs; e.g., MySQL, MonetDB) are one of the most important server workloads as they allow users to capture and analyze large amounts of data.
+            Fast query processing is a key design goal of DBMSs, and we seek to achieve the goal through hardware acceleration.
+            In this research, to accelerate query processing, we analyze the key performance bottlenecks of the existing DBMSs and propose
+            hardware acceleration techniques which fully exploit the high potential of modern hardware.
+            Example outcomes of this topic are PID-Join [SIGMOD '23], a fast in-memory join algorithm exploiting the processing-in-memory capabilities of commodity DIMM devices,
+            and SPID-Join [SIGMOD '25], a skew-resistant in-memory join algorithm which achieves high skew resistance by leveraging the architectural characteristics of commodity processing-in-DIMM devices.
+          </p>
+        </li>
+        <li><b>Next-Generation CPU &amp; GPU Architectures for General-Purpose Computing</b>
+          <p align="justify">
+            CPU and GPU are the two most widely-deployed processors available on most of desktops, servers, and mobile devices.
+            Still, their architectures continue to change as their primary target workloads change over time.
+            In this research, we design and propose next-generation CPU and GPU architectures to accomodate the ever-increasing performance demands
+            of emerging CPU and GPU workloads.
+            We pursue both software- and hardware-oriented approaches by prototyping software-based performance optimizations on real
+            CPUs and GPUs, and by evaluating architectural extensions using cycle-level simulators such as gem5 and GPGPU-Sim.
+            Examples of this research topic include GPUdmm [HPCA '14] and ScaleGPU [CAL '14].
+          </p>
+        </li>
+        <li><b>FPGA-Based Hardware Acceleration</b>
+          <p align="justify">
+            One of the most rewarding moments as a computer architect is to realize our hardware proposals on real systems.
+            It is very difficult to manufacture an actual chip, so we heavily utilize Field-Programmable Gate Arrays (FPGAs) whose functionality can be changed with hardware description languages
+            (e.g., Verilog, VHDL).
+            By implementing our hardware proposals on FPGAs, we can apply the hardware proposals to real systems
+            and demonstrate the real-world effectiveness of the hardware proposals.
+            Still, how to implement high-performance FPGA prototypes of the hardware proposals raises various research opportunities which we seek to resolve.
+            Notable FPGA prototypes we implemented are DCS [MICRO '15], DCS-ctrl [ISCA '18], and MPC-Wrapper [FCCM '24].
+          </p>
+        </li>
+        <!--
+        <li><b>System Software &amp; Hardware Accelerators for Artificial Intelligence</b>
+          <p align="justify">
+            Artificial Intelligence (AI) is one of the most important workloads of today;
+            however, efficient execution of AI workloads is still a major challenge to both hardware and software.
+            In this research, we investigate architectural and system-level support to maximize the performance and/or
+            energy efficiency of AI workload execution on various computing platforms.
+            We propose new hardware accelerator designs, new AI frameworks to fully utilize the underlying hardware resources,
+            and vertical integration methods spanning both hardware and software.
+            The research outcomes of this topic include Dataflow Mirroring [IEEE TC '23, DAC '21], SGCN [HPCA '23], GuardiaNN [Middleware '22], and &mu;Layer [EuroSys '19].
+          </p>
+        </li>
+        <li><b>Next-Generation GPU Architectures for High-Performance Rasterization &amp; Ray Tracing</b>
+          <p align="justify">
+            Have you ever wondered how your GPU produces a frame which gets displayed on your monitor?
+            Graphics workloads such as games are the primary acceleration target of GPUs, and GPU microarchitectures have been evolved in a way which maximizes throughput to process millions of vertices, primitives (e.g., triangles), fragments, and pixels.
+            In this research, we seek to propose new GPU microarchitectures which improve the performance of real-time rasterization and ray tracing, the two most widely-used graphics techniques for implementing rich graphics effects.
+            We focus on both rasterization and ray tracing;
+            rasterization has been the dominant technique for graphics, whereas ray tracing is becoming more and more popular due to its ability to implement photorealistic frames.
+            GPUpd [MICRO '17] is an example outcome of this research topic.
+          </p>
+        </li>
+        -->
+      </ul>
+    </div>
+  </body>
+</html>
+

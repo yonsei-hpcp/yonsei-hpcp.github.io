@@ -1,0 +1,90 @@
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+* { font-family: 'Nanum Barun Gothic', sans-serif; }
+
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h1 { font-size: 16pt; }
+h2 { font-size: 14pt; }
+
+a:link, a:visited {
+  color: DarkBlue;
+  text-decoration: none;
+}
+a:hover {
+  color: DeepSkyBlue;
+  text-decoration: underline;
+}
+
+div#top {
+  max-width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+div#top img {
+  max-width:100%;
+  height: auto;
+}
+
+ul#menu {
+  display: table; /* Treat ul as a table */
+  height: 32px;
+  /*width: 85%;*/ /* Optional: make it span full width */
+  border-collapse: collapse; /* Optional: for cleaner borders */
+  margin: 0 auto; /* Centers the contents horizontally */
+  text-align: center; /* Centers the list items within the ul */
+  list-style-type: none;
+  padding-inline: 0;
+  padding-block: 0;
+  line-height: 32px;
+}
+ul#menu li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  padding: 0 32px;
+  /*
+  padding-inline: 32px;
+  padding-block: 0;
+  */
+}
+ul#menu li .active {
+  font-weight: bold;
+}
+
+div#content {
+  width: fit-content;
+  max-width: 95%;
+  height: auto;
+  margin: auto;
+}
+div#content ul {
+  margin-top: 0.25em;
+}
+
+span.label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: .25em;
+  padding: 5px 3px 2px;
+}
+span.label-arch { background-color: #4CAF50; }
+span.label-sys { background-color: #2196F3; }
+span.label-sec { background-color: #F44336; }
+span.label-ai { background-color: #FF9800; }
+span.label-neuro { background-color: #008080; }
+span.label-gpu { background-color: #191970; }
+span.label-fpga { background-color: #B8860B; }
+span.label-modeling { background-color: #708090; }
+span.label-mobile { background-color: #BA55D3; }
+span.label-database { background-color: #008080; }
+span.label-pim { background-color: #FF6700; }
+span.label-smartssd { background-color: #5B2C6F; }
